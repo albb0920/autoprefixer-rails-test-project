@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.6.6
+before_install:
+  - gem install bundler -v 2.1.4
+  - nvm install node
+  - bundle
+script:
+  - bin/rails assets:precompile
